@@ -8,21 +8,21 @@
 
 int GetUserInput(string str)
 {
-Console.Write($"{str}: ");
-int num = Convert.ToInt32(Console.ReadLine());                  // Запрос на ввод числа
-return num;
+    Console.Write($"{str}: ");
+    int num = Convert.ToInt32(Console.ReadLine());                  // Запрос на ввод числа
+    return num;
 }
 
 
 bool IsThreeDigit(int num)
 {
-  return num > 99 && num < 1000;                               // проверка на трехзначность
+    return num > 99 && num < 1000;                               // проверка на трехзначность
 }
 
 int SecondDigit(int num)
 {
-int secondDigit = num / 10 % 10;                               // нахождение второй цифры в трехзначном числе
-return secondDigit;
+    int secondDigit = num / 10 % 10;                               // нахождение второй цифры в трехзначном числе
+    return secondDigit;
 }
 
 

@@ -2,9 +2,9 @@
 заданному номеру четверти, показывает диапазон
 возможных координат точек в этой четверти (x и y). */
 
-using System.Globalization;
+//using System.Globalization;
 
-string RangeCoordinates(int num)
+string? RangeCoordinates(int num)
 {
 
     if (num == 1) return "x > 0, y > 0";
@@ -21,6 +21,3 @@ int quater = Convert.ToInt32(Console.ReadLine());
 string range = RangeCoordinates(quater);
 
 Console.WriteLine(range);
-
-
-

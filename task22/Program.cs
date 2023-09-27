@@ -4,16 +4,19 @@
 // 5 -> 1, 4, 9, 16, 25.
 // 2 -> 1,4
 
-void SquareNumbers (int num)
+using System.Runtime.Versioning;
+
+void SquareNumbers(int N)
 {
-int count = 1;
-while (count <= num) {
-Console.WriteLine($"{count, 3} -> {count*count, 5}");
-count++;
-}
+    int count = 1;
+    while (count <= N)
+    {
+        Console.WriteLine(count * count);
+        count++;
+    }
 }
 
 
-Console.WriteLine ("Digit input from user:");
+Console.WriteLine("Digit input from user:");
 int userNum = Convert.ToInt32(Console.ReadLine());
 SquareNumbers(userNum);

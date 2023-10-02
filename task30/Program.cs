@@ -4,17 +4,19 @@
 [1,0,1,1,0,1,0,0] */
 
 
+using System;
 using System.Diagnostics.CodeAnalysis;
-using Internal;
+//using Internal;
 
 int[] RandomArray(int arrLength)
 {
-    int[] arr = new int[arrLength];
+    int[] array = new int[arrLength];
+    Random rand = new Random();
     for (int i = 0; i < arrLength; i++)
     {
-        arr[i] = new Random().Next(2);
+        array[i] = rand.Next(2);
     }
-    return arr;
+    return array;
 }
 
 void PrintArray(int[] array)
